@@ -1,0 +1,146 @@
+body {
+    background-color: #9370db;
+    font-family: 'Roboto', cursive;
+    height: 100vh;
+}
+
+.conteudo {
+    padding: 10vh 3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.principal {
+    flex-grow: 1;
+    width: 20em;
+    margin: auto auto;
+    padding: 4em 2em 2em;
+    box-sizing: border-box;
+    display: flex;
+    background:#d84736;
+    border-radius: 10px;
+    gap: 2em;
+    margin-top: 2em;
+}
+  
+.mochila {
+    min-width: 170px;
+    max-width: 170px;
+    height: 180px;
+    padding-top: 80px;
+    background-color: #8A2BE2;
+    box-shadow: inset 0 6px 0 2px #4B0082, 0 -93px 0 -77px #4B0082, 0 -93px 0 -72px #4B0082, 0 -93px 0 -68px #1C1C1C;
+    background-image: linear-gradient(to right, transparent 5px, transparent 20px, transparent 1px, transparent 25px, transparent 5px, transparent 20px, transparent 20px, transparent 86px,#4B0082 45px, #4B0082 230px, transparent 25px, transparent 172px );
+    background-position: center 254px;
+    background-size: 305px 6px;
+    background-repeat: repeat-x; 
+    border: 5px solid #1C1C1C;
+    border-radius: 85px 85px 44px 44px;
+    display: inline-block;
+    vertical-align: top;
+    flex-basis: auto;
+    flex-grow: 1;
+}
+  
+.mochila:before, .mochila:after {
+    display: block;
+    content: '';
+    position: absolute;
+  }
+  
+.mochila:before {
+    height: 75px;
+    width: 118px;
+    background-image: radial-gradient(circle closest-corner at 13px 29px , #4B0082, #4B0082 2px, transparent 2px, transparent), radial-gradient(circle closest-corner at 13px 29px , #1C1C1C, #1C1C1C 4px, transparent 4px, transparent), linear-gradient(to bottom, transparent 10px, transparent 15px, #1C1C1C 5px, #1C1C1C 18px, transparent 18px, transparent 100px), linear-gradient(to right, #4B0082 10px, #4B0082 10px, transparent 10px, transparent 16px, #4B0082 9px, #4B0082 50px), linear-gradient(to bottom, #4B0082 8px, #4B0082 16px, #1C1C1C 8px, #1C1C1C 30px, #4B0082 20px, #4B0082 72px, #4B0082 10px, #4B0082 57px, #4B0082 5%);
+    margin-left: 22px;
+    margin-top: 58px;
+    border: 4px solid #1C1C1C;
+    border-radius: 11px;
+    box-shadow: 0 4px 0 0 #9400D3, inset 0px 4px 1px 0 #9400D3;
+    content: '||';
+    color: transparent;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    z-index: 1;
+    text-shadow: rgb(0, 0, 0) -2px -86px 0px;
+    font-size: 14px;
+}
+  
+.mochila:after {
+    margin-left: 67px;
+    margin-top: -30px;
+    background: #d84736;
+    width:26px;
+    height:26px;
+    border: 3px solid #491033;
+    border-radius: 3px;
+    transform: rotate(45deg);
+}
+
+.adicionar {
+    width: 100%;
+}
+
+.adicionar input {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0.5em 0 2em;
+    padding: 1em 0.5em;
+    border-radius: 10px;
+    border: none;
+}
+
+.adicionar label {
+    display: block;
+}
+
+.cadastrar {
+    background-color: #4B0082;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.lista {
+    margin: 0;
+    padding: 0;
+    margin-top: 2em;
+    width: 100%;
+}
+
+.item {
+    list-style: none;
+    padding: 0.6em 2em;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: 0 0 1em;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 20px;
+}
+
+.item strong {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    Background: #d84736;
+    font-weight: 400;
+}
+.btn-remove{
+    background-color: #B22222;
+    border-radius: 50%;
+    border: none;
+    width:2em;
+    height: 2em;
+    color: #fff;
+}
+.btn-remove:hover{
+    background-color: #A52A2A;
+}
+
